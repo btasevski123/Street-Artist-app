@@ -1,0 +1,39 @@
+@import "./landingPage.css";
+@import "./navbar.css";
+@import "./visitorHomePage.css";
+@import "./visitorListingPage.css";
+@import "./visitorFilterPage.css";
+@import "./artistHomePage.css";
+@import "./artistItemsPage.css";
+@import "./addNewItemPage.css";
+@import "./captureImagepopup.css";
+@import "./auctionPage.css";
+
+/* css resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+
+
+.d-flex {
+  display: flex;
+}
+
+section {
+  display: none;
+}
+
+

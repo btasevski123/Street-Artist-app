@@ -1,0 +1,65 @@
+.listingpage-style {
+  overflow: hidden;
+  background-color: #edd5bb;
+}
+.card {
+  overflow-x: hidden;
+  margin: 2rem 0;
+  background-color: #fcebd5;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.card-title {
+  font-family: "Reenie Beanie";
+  font-size: 2.2rem;
+}
+
+.card .title p {
+  font-size: 1.2rem;
+}
+
+.image-price {
+  background-color: #a16a5e;
+  color: white;
+  padding: 0.2rem 0.3rem;
+  border-radius: 3px;
+}
+.card-two .image-price {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+.card-one {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+
+.card-two {
+  color: #fcebd5;
+  background-color: #a16a5e;
+}
+
+/* visitor filter page */
+
+.filter-btn {
+  position: absolute;
+  position: fixed;
+  padding: 5px 10px;
+  background: #d54c2e;
+  font-size: 2.5rem;
+  top: 85%;
+  right: 5%;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  z-index: 4;
+  transform: rotate(90deg);
+}
+
+.filter-btn a {
+  color: #fcebd5;
+}

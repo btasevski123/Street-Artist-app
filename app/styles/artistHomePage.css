@@ -1,0 +1,80 @@
+.artistHome-style {
+  background-color: #edd5bb;
+  min-height: calc(100vh - 80px);
+}
+
+.artistHome-style h3,
+p {
+  margin-bottom: 0;
+}
+.boxes-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.data-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sold-items-box,
+.income-box {
+  width: 47%;
+  padding: 1rem 4rem;
+  background-color: #a16a5e;
+  color: #edd5bb;
+  text-transform: capitalize;
+}
+
+.sold-items-box,
+.income-box:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.auction-box {
+  color: #fcebd5;
+  width: 100%;
+  padding: 1rem;
+  background-color: #d44c2e;
+  margin-top: 2rem;
+}
+
+/* chart */
+
+.artist-chart {
+  background-color: #fcebd5;
+  margin-top: 2rem;
+  padding: 20px 0;
+}
+.artist-chart .chart-text {
+  color: #a16a5e;
+  font-size: 1rem;
+  margin: auto 25px;
+  font-family: "Roboto";
+  
+}
+.artist-chart .buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.artist-chart button {
+  background-color: #a16a5e;
+  color: #fcebd5;
+  font-weight: light;
+  padding: 0.2rem 1.5rem;
+}
+.artist-chart button:hover {
+  background-color: #d44c2e;
+  color: #fcebd5;
+}
+#myChart {
+  margin: 3rem auto;
+  height: 100%;
+}

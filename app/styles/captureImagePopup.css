@@ -1,0 +1,36 @@
+.captureImagePopup-style {
+    background-color: #a26a5e;
+    min-height: calc(100vh - 80px);
+    position: relative;
+  }
+  .camera-streaming {
+    width: 90%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  
+.captureImagePopup {
+  color: #FCEBD5;
+}
+.captureImagePopup:hover {
+  text-decoration: none;
+  color: beige;
+}
+
+  #captureImage {
+    font-size: 2rem;
+    color: #FCEBD5;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #captureImage:hover {
+    cursor: pointer;
+    font-size: 2.2rem;
+  }

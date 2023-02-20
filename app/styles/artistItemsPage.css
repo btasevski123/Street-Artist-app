@@ -1,0 +1,58 @@
+.artistItems-style {
+    background-color:#edd5bb;
+    padding: 1rem 0;
+}
+
+
+
+.add-item-box {
+    text-align: center;
+    padding: 1.4rem 0;
+    background: #fcebd5;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    
+}
+.add-box {
+    font-size: 1.1rem;
+    color: #a16a5e;
+    border: 2px dashed #a26a5e;
+    padding: 2.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.add-item:hover {
+    cursor: pointer;
+}
+
+
+/* card */
+.artist-card {
+    margin-top: 30px;
+  }
+  .card-date {
+    font-size: 10px;
+  }
+  .card-footer {
+    background-color: #a16a5e;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-footer button {
+    color: #fcebd5;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    padding: 3px 10px;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid transparent;
+  }
+  .auction {
+    background-color: #1b59ac;
+  }
+  .remove {
+    background-color: #d44c2e;
+  }
+  .edit-btn {
+    background-color: #fcebd5;
+    color: #a16a5e !important;
+  }

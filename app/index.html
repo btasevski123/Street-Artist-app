@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Street-Artists</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <!-- css link -->
+  <link rel="stylesheet" href="./styles/main.css" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap" rel="stylesheet" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/b22ebba889.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="d-flex full-nav">
+
+    <a href="#" class="nav-header d-flex">
+      <img src="./img/76974-[Converted] 1.png" alt="navbar-logo" class="nav-logo" />
+      <h1 class="nav-text">Street Artists</h1>
+    </a>
+
+    <a href="#auctionPage" class="auction-btn">
+      <img src="./img/Vector.png" alt="auction-btn" />
+    </a>
+    <div class="hamburger-menu">
+      <i class="fas fa-bars"></i>
+      <ul class="dropdown-list">
+        <li id="homePage"><a href="#artistHomePage">home</a></li>
+        <li id="itemsPage"><a href="#artistItemsPage">items</a></li>
+        <li id="auctionPage"><a href="#auctionPage">auction</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <main>
+    <!-- landing Page -->
+    <section class="page landingPage-style" id="landingPage">
+      <div class="logo">
+        <img src="./img/Logo (1).png" alt="Logo" />
+      </div>
+
+      <div class="loginWrapper">
+        <div class="joinAsArtist">
+          <h2 id="joinAsArtist">Join as Artist</h2>
+          <select id="users" class="Choose">
+            <option value="">Choose</option>
+          </select>
+        </div>
+        <div class="joinAsVisitor">
+          <h2 id="joinAsVisitor">Join as Visitor</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- visitor Home Page -->
+    <section class="page visitorPage-style" id="visitorHomePage">
+      <!-- banner -->
+      <div class="visitor-banner d-flex">
+        <p>Looking for <br />masterpiece?</p>
+        <a href="#visitorListingPage" class="visitor-banner-btn">Find one now!</a>
+      </div>
+
+      <!-- slider -->
+      <div class="img-slider">
+        <div class="toRight">
+          <div class="sliderToRight slider-style"></div>
+        </div>
+        <div class="toLeft">
+          <div class="sliderToLeft slider-style"></div>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="carousel-wrapper">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade mx-auto w-100 h-100"
+          data-interval="5500" data-ride="carousel">
+          <div class="carousel-inner w-75 mx-auto h-100 d-flex align-items-center text-center">
+            <div class="carousel-item d-flex position-relative active">
+              <div class="left-inner d-flex align-self-center w-50">
+                <div class="box text-white mx-auto">
+                  <img src="./img/pexels-mentatdgt-937481.jpg" class="box-img" alt="John Doe" />
+                  <p class="box-text mx-auto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis
+                  </p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="right-inner w-50">
+                <p class="carousel-text h-100 w-50 d-flex align-items-center mx-auto">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, repellendus. Text 1
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex position-relative">
+              <div class="left-inner d-flex align-self-center w-50">
+                <div class="box text-white mx-auto">
+                  <img src="./img/pexels-andrea-piacquadio-733872.jpg" class="box-img" alt="Marc Doe" />
+                  <p class="box-text mx-auto">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Expedita, quasi!
+                  </p>
+                </div>
+              </div>
+              <div class="line-border"></div>
+              <div class="right-inner w-50">
+                <p class="carousel-text h-100 w-50 d-flex align-items-center mx-auto">
+                  Lorem ipsum dolor sit amet consectetur, consectetur,
+                  adipisicing adipisicing elit. Ipsum, repellendus. Text 2
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex position-relative">
+              <div class="left-inner d-flex align-self-center w-50">
+                <div class="box-contnet text-white mx-auto">
+                  <img src="./img/pexels-stefan-stefancik-91227.jpg" class="box-img" alt="Jane Doe" />
+                  <p class="box-text mx-auto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="right-inner w-50">
+                <p class="carousel-text h-100 w-50 d-flex align-items-center mx-auto">
+                  Lorem ipsum dolor sit amet elit. Ipsum, repellendus. Text 3
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- visitor Listing Page -->
+    <section class="page listingpage-style" id="visitorListingPage">
+      <div class="card-wrapper"></div>
+      <div class="filter-btn">
+        <a href="#visitorFilterPage"><i class="fas fa-sliders-h"></i></a>
+      </div>
+    </section>
+
+    <!-- visitor Filter Page -->
+    <section class="page filterpage-style" id="visitorFilterPage">
+      <form class="filter-form">
+        <a href="#visitorListingPage"><i class="fas fa-times close-button"></i></a>
+        <h2>Filter By</h2>
+        <div class="form-group">
+          <label for="title">By Item Title</label>
+          <input type="text" placeholder="Label" id="title" />
+        </div>
+        <div class="form-group">
+          <label for="artist">By Artist</label>
+          <select id="artist"></select>
+        </div>
+        <div class="form-group">
+          <label for="price">By Price</label>
+          <div class="by-price">
+            <div class="min-val" id="price">
+              <label for="min-val">Min:</label>
+              <input type="text" id="min-val" class="min-value" placeholder="Label" />
+            </div>
+            <div class="max-val">
+              <label for="max-val">Max:</label>
+              <input type="text" id="max-val" class="max-val" placeholder="Label" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="type">By Type</label>
+          <select name="type" class="typeSelect" id="type"></select>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" class="submit-button">
+            <i class="fas fa-check check-btn"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- artist home page -->
+    <section class="page artistHome-style" id="artistHomePage">
+      <div class="boxes-wrapper">
+        <div class="data-box">
+          <div class="sold-items-box">
+            <p>total items sold</p>
+            <h3 class="items-sold-text">
+              <span id="artistItemsSold">12</span>/<span id="artistPublishedItems">35</span>
+            </h3>
+          </div>
+          <div class="income-box">
+            <p>total income</p>
+            <h3 class="income-text">$1700</h3>
+          </div>
+        </div>
+        <div class="auction-box">
+          <p class="auction-box-title">Live auctioning item</p>
+          <h3 class="auction-price-bid">$1200</h3>
+          <p>current bid</p>
+        </div>
+      </div>
+
+      <div class="artist-chart" id="artist-chart">
+        <p class="chart-text">Display my income for last</p>
+        <div class="buttons">
+          <button class="button btn" id="last-7-days">7 days</button>
+          <button class="button btn" id="last-14-days">14 days</button>
+          <button class="button btn" id="last-30-days">30 days</button>
+        </div>
+        <div><canvas id="myChart"></canvas></div>
+      </div>
+    </section>
+
+    <!-- artist items page -->
+    <section class="page artistItems-style" id="artistItemsPage">
+
+      <div class="add-item-box">
+        <div class="add-box">
+          <p class="add-item">+ Add new item</p>
+        </div>
+      </div>
+      <div class="artist-items-wrapper">
+
+      </div>
+    </section>
+
+    <!-- add item form -->
+    <section class="artists-add-item-page page" id="addNewItemPage">
+      <form class="add-item-form">
+        <div class="form-title d-flex justify-content-between">
+          <h4 class="form-title">Add new item</h4>
+          <div class="checkbox d-flex">
+            <label class="form-check-label" for="isPublished">Is Published</label>
+            <input class="form-check-input w-auto" type="checkbox" id="isPublished" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="newItemTitle">Title</label>
+          <input type="text" id="newItemTitle" />
+        </div>
+        <div class="form-group">
+          <label for="newItemDesc">Description</label>
+          <textarea id="newItemDesc" rows="4"></textarea>
+        </div>
+        <div class="form-group d-flex justify-content-between">
+          <div class="type">
+            <label for="newItemType">Type</label>
+            <select name="type" id="newItemType"></select>
+          </div>
+          <div>
+            <label for="newItemPrice">Price</label>
+            <input type="number" id="newItemPrice" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="newItemimageUrl">Image URL</label>
+          <input type="url" id="newItemimageUrl" />
+        </div>
+        <div class="form-group">
+          <div class="snapshot-box">
+            <a href="#captureImagePopup" class="captureImagePopup">
+              <img src="" id="preview" alt="" style="width: 100%;">
+              <div class="snapshot-text">
+                <i class="fa-solid fa-camera capture-camera-snap"></i>
+                <p class="snap-title">Take a snapshot</p>
+            </a>
+          </div>
+        </div>
+        </div>
+        <div class="form-group d-flex justify-content-between">
+          <button type="submit" class="addItem">add new item</button>
+          <button class="cancelItem">cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!--capture image popup -->
+    <section id="captureImagePopup" class="captureImagePopup-style page">
+      <video preload="metadata" autoplay id="streamingVideo" class="camera-streaming"></video>
+      <canvas style="display: none" id="captureCanvas"></canvas>
+
+      <i id="captureImage" class="fas camera-btn fa-camera"></i>
+
+    </section>
+
+    <!-- auction page -->
+    <section class="page auction-page-style auction-block" id="#auctionPage">
+      <div class="inner-auction-cont">
+        <div class="auction-container">
+          <img src="" alt="" class="auction-img" />
+          <button class="auction-img-price"></button>
+          <p class="auction-img-desc"></p>
+        </div>
+        <div class="counter">
+          <p class="counter-title">Ending in</p>
+          <p class="timer"><span class="seconds-auction">120</span></p>
+        </div>
+        <div class="bid-input">
+          <p>Enter your price</p>
+          <input type="number" class="bid-amount" />
+        </div>
+        <button class="place-bid-btn">Enter a price</button>
+        <div class="bidder-list"></div>
+      </div>
+      <div class="no-auction-cont">
+        <div class="no-auction-title">
+
+          <h3 class="no-auc-text">Auction is over</h3>
+
+          <button class="return">
+            <p>Go home</p>
+          </button>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- data -->
+  <script src="../data/data.js"></script>
+  <!-- global variables -->
+  <script src="../app/pages/globalvar.js"></script>
+  <!-- js scripts -->
+  <script src="./pages/landingPage.js"></script>
+  <script src="./pages/visitorHomePage.js"></script>
+  <script src="./pages/visitorListingPage.js"></script>
+  <script src="./pages/artistHomePage.js"></script>
+  <script src="./pages/artistItemsPage.js"></script>
+  <script src="./pages/captureImagePopup.js"></script>
+  <script src="./pages/auction.js"></script>
+
+  <script defer src="index.js"></script>
+</body>
+
+</html>
